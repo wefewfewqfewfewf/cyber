@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cyberpunk Edgerunners</title>
+  <link rel="icon" href="logo.jpg" type="image/jpeg">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+
+  <header class="text-center py-5">
+  <a class=".nop underline" href="#"><h1>Cyberpunk Edgerunners</h1></a>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <section class="section1 text-center p-4">
+          <p>Zanurz się głębiej w cyberpunkowy świat z oficjalną stroną serialu 'Cyberpunk: Edgerunners'. Odkryj tajemniczą fabułę, poznaj bohaterów , zapoznaj się z muzyką, opiniami  oraz twórcami serialu. Ta strona to portal, który przeniesie Cię prosto do serca przyszłości łączącej technologię, emocje i niezwykłe historie</p>
+        </section>
+        
+      </div>
+      <div class="col-md-6">
+        <section class="section2 text-center p-4">
+            <br>
+            <p>O serialu</p>
+            <a href="#" class="btn button"  onclick="changeContent()">Przejdź </a>
+        </section>
+        
+      </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-4 mb-4">
+          <section class="section3 text-center p-4">
+            <p>Postacie</p>
+            <a href="#" class="btn button"  >Przejdź </a>
+          </section>
+        </div>
+        <div class="col-md-4 mb-4">
+          <section class="section4 text-center p-4">
+            <p>Recenzje</p>
+            <a href="#" class="btn button"  >Przejdź </a>
+          </section>
+        </div>
+        <div class="col-md-4 mb-4">
+          <section class="section5 text-center p-4">
+            <p>Inne</p>
+            <a href="#" class="btn button"  >Przejdź </a>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        let defaultContent = document.querySelector('.section1').innerHTML;
+
+        function changeContent() {
+            document.body.innerHTML = `
+                <div class="text-center py-5">
+                
+                    <h1 onclick="resetContent()">O serialu</h1>
+                    <section class="se2">
+                   <p>Ten serial jest 10-odcinkową opowieścią o dzieciaku z ulicy próbującym przetrwać w mieście przyszłości ogarniętym obsesją na punkcie technologii i modyfikacji ciała. Aby przeżyć, stawia wszystko na jedną kartę i postanawia zostać edgerunnerem, czyli jednym z nielegalnie działających najemników zwanych cyberpunkami.</p>
+                   </section>
+                </div>
+            `;
+        }
+     
+
+        function resetContent() {
+            document.body.innerHTML = `
+                <header class="text-center py-5">
+                    <a href="#"><h1>Cyberpunk Edgerunners</h1></a>
+                </header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <section class="section1 text-center p-4">
+                                ${defaultContent}
+                            </section>
+                        </div>
+                        <div class="col-md-6">
+                            <section class="section2 text-center p-4">
+                                <br>
+                                <p>O serialu</p>
+                                <a href="#" class="btn button" onclick="changeContent()">Przejdź</a>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-md-4 mb-4">
+                            <section class="section3 text-center p-4">
+                                <p>Postacie</p>
+                                <a href="#" class="btn button" onclick="changeContent()">Przejdź</a>
+                            </section>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <section class="section4 text-center p-4">
+                                <p>Recenzje</p>
+                                <a href="#" class="btn button" onclick="changeContent()">Przejdź</a>
+                            </section>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <section class="section5 text-center p-4">
+                                <p>Inne</p>
+                                <a href="#" class="btn button" onclick="changeContent()">Przejdź</a>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

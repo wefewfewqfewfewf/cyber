@@ -1,0 +1,214 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #0f0f0f;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: large;
+    background-image: url('tlo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+  }
+
+ 
+ 
+  
+  h1  {
+    font-size: 3em;
+    background: linear-gradient(135deg, #39ff14, #00ffea, #00ff97, #00c853, #004d00, #004d00, #00c853, #00ff97, #00ffea, #39ff14);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: holographic 10s ease infinite;
+  }
+
+  @keyframes holographic {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  
+
+  .section1 {
+
+    padding: 100px;
+    border: 2px solid white;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+    color: white;
+    
+    background-image: url('s2.jpg');
+    background-size: cover;
+   
+    background-repeat: no-repeat;
+  }
+.section3{
+    border: 2px solid red;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px red;
+    color: red;
+    background-image: url('postacie.jpg');
+    background-size: cover;
+   
+    background-repeat: no-repeat;
+  }
+   
+ .section3 .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid  red;
+    color:  red;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+   .section3 .button:hover {
+    background-color:  red;
+    color: white;
+  }
+  
+
+  .section4{
+    border: 2px solid #00ff00;
+    padding: 20px;
+    font-size: 20px;
+    margin: 20px 0;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ff00;
+    color: #00ff00;
+    background-image: url('s9.jpg');
+    background-size: cover;
+   
+    background-repeat: no-repeat;
+  }
+   
+ .section4 .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid  #00ff00;
+    color:  #00ff00;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+   .section4 .button:hover {
+    background-color:  #00ff00;
+    color: white;
+  }
+  
+  .section5{
+    border: 2px solid yellow;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #1a1a1a;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px yellow;
+    color: yellow;
+    background-image: url('s5.jpg');
+    background-size: cover;
+   
+    background-repeat: no-repeat;
+  }
+
+   
+ .section5 .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid  yellow;
+    color:  yellow;
+     font-size: 20px;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+   .section5 .button:hover {
+    background-color:  yellow;
+    color: white;
+  }
+  a {
+    text-decoration: none !important;
+}
+.nop underline {
+    text-decoration: none !important;
+}
+
+  
+  
+ .section2 .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid  blue;
+    color:  blue;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    
+  }
+  
+   .section2 .button:hover {
+    background-color:  blue;
+    color: white;
+  }
+  
+
+  .section2 {
+ height: 85%;
+    
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px blue;
+    color: blue;
+    background-image: url('s1.jpg');
+    background-size: cover;
+   
+    background-repeat: no-repeat;
+  }
+  .section3,
+  .section4,
+  .section5 {
+    height: 100% !important; 
+
+  }
+  .se2{ text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 20px 0;
+   font-size:40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px blue;
+    color: blue;}
